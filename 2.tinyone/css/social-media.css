@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-size: 90px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+h1, a {
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    border: 5px dashed #fff;
+    border-radius: 10px;
+}
+#facebook {
+    background-color: #3B5998;
+}
+
+#twitter {
+    background-color: #08A0E9;
+}
+
+#google {
+    background-color: #DB4437;
+}
+
+#pinterest {
+    background-color: #BD081C;
+}
