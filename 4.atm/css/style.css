@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Share Tech Mono"), local("ShareTechMono-Regular"), url("../fonts/Share Tech Mono.woff2") format("woff2"); }
+a {
+  text-decoration: none;
+  color: #6DEDA3; }
+  a:visited {
+    color: #6DEDA3; }
+
+body {
+  background-color: #3E555D; }
+
+.wrapper, .main-frame {
+  width: 900px;
+  height: 753px;
+  box-sizing: border-box; }
+
+.content, .btn, #input {
+  font-size: 22px;
+  color: #6DEDA3;
+  font-family: 'Share Tech Mono', monospace; }
+
+.wrapper {
+  background-color: #3E555D;
+  margin: 0 auto; }
+
+.main-frame {
+  background-color: #14332A;
+  background-image: url("../images/terminal-frame.png");
+  background-repeat: no-repeat;
+  padding: 90px 110px; }
+
+.content {
+  width: 719px;
+  height: 490px; }
+
+p {
+  margin: 0; }
+
+.btn {
+  background-color: #14332A;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  outline: none; }
+
+.hide {
+  display: none; }
+
+#message, .key.special:last-child, .numKeys:last-child, .zero:last-child, .field, .getCashBtn, #cash {
+  margin-bottom: 22px; }
+
+#input {
+  background-color: #14332A;
+  width: 699px;
+  border: none;
+  outline: none; }
+
+.key, .numKeys, .zero {
+  width: 36px;
+  text-align: center;
+  display: inline-block; }
+  .key.special, .numKeys, .zero {
+    width: 132px;
+    display: block; }
+
+.field {
+  max-height: 22px;
+  overflow: hidden; }
+
+#secret-restart-button {
+  width: 45px;
+  height: 43px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 674px;
+  left: 834px;
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer; }
+
+#secret-restart-button:active {
+  background-color: rgba(0, 0, 0, 0); }
+
+/*# sourceMappingURL=style.css.map */

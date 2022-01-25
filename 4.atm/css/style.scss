@@ -1,0 +1,138 @@
+$font-color: #6DEDA3;
+$metallic: #3E555D;
+$bg-color: #14332A;
+$font-size: 22px;
+$frame-width: 719px;
+
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url('../fonts/Share Tech Mono.woff2') format('woff2');
+
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+  &:visited {
+    color: $font-color;
+  }
+}
+
+body {
+  background-color: $metallic;
+}
+
+%frame {
+  width: 900px;
+  height: 753px;
+  box-sizing: border-box;
+}
+
+%main-font {
+  font-size: $font-size;
+  color: $font-color;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.wrapper {
+  @extend %frame;
+  background-color: $metallic;
+  margin: 0 auto;
+}
+
+.main-frame {
+  @extend %frame;
+  background-color: $bg-color;
+  background-image: url("../images/terminal-frame.png");
+  background-repeat: no-repeat;
+  padding: 90px 110px;
+}
+
+.content {
+  width: $frame-width;
+  height: 490px;
+  @extend %main-font;
+}
+
+p {
+  margin: 0;
+}
+.btn {
+  background-color: $bg-color;
+  border: none;
+  @extend %main-font;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+#message {
+  margin-bottom: $font-size;
+}
+
+#input {
+  background-color: $bg-color;
+  @extend %main-font;
+  width: $frame-width - 20px;
+  border: none;
+  outline: none;
+}
+
+.key {
+  width: 36px;
+  text-align: center;
+  display: inline-block;
+  &.special {
+    width: 132px;
+    display: block;
+    &:last-child {
+      @extend #message;
+    }
+  }
+}
+
+.numKeys {
+  @extend .key,.special;
+}
+
+.zero {
+  @extend .numKeys;
+}
+
+.field {
+  max-height: $font-size;
+  overflow: hidden;
+  @extend #message;
+}
+
+.getCashBtn {
+  @extend #message;
+}
+
+#cash {
+  @extend #message;
+}
+
+#secret-restart-button {
+  width: 45px;
+  height: 43px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 674px;
+  left: 834px;
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+#secret-restart-button:active {
+  background-color: rgba(0, 0, 0, 0);
+}

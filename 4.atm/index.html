@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="main-frame">
+            <div class="content">
+                <div id="message" class="hide"></div>
+                <div id="cash" class="hide"></div>
+                <div id="input" class="hide">
+                    <p class="field">&#62;&#62; </p>
+                    <div class="numKeys">
+                        <button class="btn key" onclick="num1()">[1]</button>
+                        <button class="btn key" onclick="num2()">[2]</button>
+                        <button class="btn key" onclick="num3()">[3]</button>
+                        <button class="btn key" onclick="num4()">[4]</button>
+                        <button class="btn key" onclick="num5()">[5]</button>
+                        <button class="btn key" onclick="num6()">[6]</button>
+                        <button class="btn key" onclick="num7()">[7]</button>
+                        <button class="btn key" onclick="num8()">[8]</button>
+                        <button class="btn key" onclick="num9()">[9]</button>
+                        <button class="btn key zero" onclick="num0()">[0]</button>
+                    </div>
+                    <button class="btn key special" onclick="numClear()">[Clear]</button>
+                    <button class="btn key special" onclick="numClearAll()">[Clear All]</button>
+                </div>
+                <button class="btn startBtn" onclick="start()">&#62; Start</button>
+                <button class="btn getCashBtn hide" onclick="getCash()">&#62; Get cash</button>
+                <button class="btn balanceBtn hide" onclick="balanceCheck()">&#62; Balance on screen</button>
+                <button class="btn withdrawBtn hide" onclick="withdraw()">&#62; Withdraw</button>
+                <button class="btn finishBtn hide" onclick="endWork()">&#62; Finish</button>
+                <button class="btn balanceBack hide" onclick="balanceBack()">&#62; Back</button>
+                <button class="btn withdrawBack hide" onclick="withdrawBack()">&#62; Back</button>
+            </div>
+        </div>
+    </section>
+
+    <button id="secret-restart-button" onclick ="reloadPage()"></button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
