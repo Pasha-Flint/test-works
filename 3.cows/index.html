@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cows & Chickens</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <p>Heads</p>
+        <input class="input" id="headsNumber" placeholder="Insert number of heads">
+        <p>Legs</p>
+        <input class="input" id="legsNumber" placeholder="Insert number of legs">
+        <div class="buttonsWrapper">
+            <button class="mainBtn" onclick="getResult()">Get Result</button>
+            <button class="mainBtn" onclick="clearMain()">Clear</button>
+        </div>
+        <input class="input" id="result" placeholder="">
+    </div>
+
+    <div class="hide-btn">
+        <button id="show" onclick="showCalculator()">Show/Hide Calculator</button>
+    </div>
+
+    <div class="wrapper hide" id="calculator">
+        <p>Cows</p>
+        <input class="input" id="cowsCalc" placeholder="">
+        <p>Chickens</p>
+        <input class="input" id="chickensCalc"placeholder="">
+        <div class="buttonsWrapper">
+            <button class="mainBtn" onclick="getCalcResult()">Get Result</button>
+            <button class="mainBtn" onclick="clearCalc()">Clear</button>
+        </div>
+        <input class="input" id="calcResult" placeholder="">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
