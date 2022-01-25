@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <section class="main-card hide">
+        <div class="top card">
+            <div class="column left">
+                <p id="name">default name</p>
+                <p id="position">default position</p>
+            </div>
+
+            <div class="column right">
+                <ul class="info">
+                    <li>
+                        <p id="phone">default phone</p>
+                        <img src="images/list_1.png">
+                    </li>
+
+                    <li>
+                        <p id="web">default web addres</p>
+                        <img src="images/list_2.png">
+                    </li>
+
+                    <li>
+                        <p id="email">default email</p>
+                        <img src="images/list_3.png">
+                    </li>
+
+                    <li>
+                        <p id="address">default address</p>
+                        <img src="images/list_4.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bot card">
+            <img class="logo" src="images/logo.png">
+            <p id="brand">default brand</p>
+            <p id="web2">default web address</p>
+        </div>
+    </section>
+
+    <button id="close" onclick="switchForm()" class="hide"></button>
+
+    <div id="initial">
+        <p class="description">Enter your information here</p>
+        <input id="name-field" placeholder="Name" onclick="closePopUp()"/>
+        <input id="position-field" placeholder="Position" onclick="closePopUp()"/>
+        <input id="brand-field" placeholder="Brand name" onclick="closePopUp()"/>
+        <input id="phone-field" placeholder="Phone number" onclick="popUp()"/>
+        <input id="web-field" placeholder="Web-address" onclick="closePopUp()"/>
+        <input id="email-field" placeholder="E-mail address" onclick="closePopUp()"/>
+        <input id="address-field" placeholder="Address" onclick="closePopUp()"/>
+        <button id="confirm" onclick="mainFunction()">Ok</button>
+        <div id="popup" class="hide" onclick="closePopUp()">Must start with &#39;+&#39; and may contain numbers only</div>
+    </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
